@@ -9,7 +9,7 @@
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
 (setq user-full-name "Ethan Levy"
-      user-mail-address "3174N@protonmain.com")
+      user-mail-address "3174N@protonmail.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
@@ -55,4 +55,5 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-(wakatime-mode)
+;; WakaTime doesn't work *yet*
+;; (wakatime-mode)
