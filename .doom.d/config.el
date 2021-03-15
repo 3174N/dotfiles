@@ -57,3 +57,7 @@
 
 ;; WakaTime doesn't work *yet*
 ;; (wakatime-mode)
+
+(global-fancy-dabbrev-mode)
+(global-set-key (kbd "<tab>") 'fancy-dabbrev-expand-or-indent)
+(global-set-key (kbd "<backtab>") 'fancy-dabbrev-backward)
