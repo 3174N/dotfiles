@@ -11,7 +11,7 @@ export HISTCONTROL=ignoreboth
 export EDITOR=emacs
 export VISUAL=emacs
 export ZSH="$HOME/.config/oh-my-zsh"
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.emacs.d/bin/:$PATH
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#545454"
 export XDG_RUNTIME_DIR="/tmp/runtime"
 
