@@ -1,0 +1,110 @@
+[bar/bar1]
+
+;------------;
+; DIMENSIONS ;
+;------------;
+
+width = 100%
+height = 32
+offset-y = 0
+offset-x = 0
+
+radius = 0.0
+border-bottom-size = 0
+
+;----------;
+; LOCATION ;
+;----------;
+
+bottom = false
+override-redirect = false
+
+;-------;
+; FONTS ;
+;-------;
+
+font-0 = JetBrains Mono:Semibold:size=10.5;3
+
+;--------;
+; COLORS ;
+;--------;
+
+background = #0e0e0e
+foreground = #fafafa
+border-color = 0
+
+;---------------;
+; MISCELLANEOUS ;
+;---------------;
+
+fixed-center = true
+padding-left = 2
+padding-right = 2
+module-margin = 1
+
+modules-left = i3 title
+modules-center =
+modules-right = wired-network wireless-network xkeyboard volume battery date-time
+
+enable-ipc = true
+
+;---------;
+; MODULES ;
+;---------;
+
+
+[module/date-time]
+type = custom/script
+exec = TZ=Asia/Jerusalem date +" %d-%m-%Y  %H:%M"
+interval = 1.0
+
+[module/volume]
+type = internal/alsa
+interval = 3
+
+format-volume =   <label-volume>
+label-volume = %percentage:2%%
+format-muted =   0%
+
+[module/wired-network]
+type = internal/network
+interface = eno1
+
+label-connected =  Wired  %downspeed%  %upspeed%
+label-disconnected =  Disconnected
+
+[module/wireless-network]
+type = internal/network
+interface = wlp0s20f3
+
+label-connected =  %essid%  %downspeed%  %upspeed%
+label-disconnected =  Disconnected
+
+[module/battery]
+type = internal/battery
+
+label-discharging =  %percentage%%
+label-charging =  %percentage%%
+
+[module/xkeyboard]
+type = internal/xkeyboard
+
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+blacklist-2 = caps lock
+
+format = <label-layout>
+; format-spacing = 0
+
+label-layout =  %layout%
+
+[module/i3]
+type = internal/i3
+enable-click = false
+enable-scroll = false
+
+label-focused-foreground = #fafafa
+label-unfocused-foreground = #aaaaaa
+
+[module/title]
+type = internal/xwindow
