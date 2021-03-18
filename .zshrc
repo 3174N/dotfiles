@@ -8,8 +8,8 @@ plugins=(zsh-autosuggestions colored-man-pages command-not-found cp compleat ext
 # Exports
 export LANG=en_US.UTF-8
 export HISTCONTROL=ignoreboth
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR=emacs
+export VISUAL=emacs
 export ZSH="$HOME/.config/oh-my-zsh"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#545454"
