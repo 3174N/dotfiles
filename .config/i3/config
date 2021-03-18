@@ -27,7 +27,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+c kill
 
 # start rofi
-bindsym $mod+d exec rofi -no-lazy-grab -show drun -theme launcher.rasi
+bindsym $mod+d exec rofi -no-lazy-grab -show drun -theme ~/.config/rofi/launchers/misc/blurry.rasi
 
 
 # Screenshots
