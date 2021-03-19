@@ -61,3 +61,8 @@
 (global-fancy-dabbrev-mode)
 (global-set-key (kbd "<tab>") 'fancy-dabbrev-expand-or-indent)
 (global-set-key (kbd "<backtab>") 'fancy-dabbrev-backward)
+
+(elcord-mode)
+
+(add-hook 'prog-mode-hook #'smart-semicolon-mode)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)

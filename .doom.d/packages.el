@@ -51,3 +51,7 @@
 
 (package! wakatime-mode)
 (package! fancy-dabbrev)
+(package! elcord)
+(package! smart-semicolon)
+(package! rainbow-delimiters)
+(package! magit)
