@@ -66,3 +66,6 @@
 
 (add-hook 'prog-mode-hook #'smart-semicolon-mode)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+(add-to-list 'load-path "~/.emacs.d/scripts")
+(load "better-comments.el")
