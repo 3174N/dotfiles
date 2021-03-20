@@ -28,7 +28,7 @@ bindsym $mod+Shift+c kill
 
 # start rofi
 bindsym $mod+d exec rofi -no-lazy-grab -show drun -theme ~/.config/rofi/launchers/misc/blurry.rasi
-
+bindsym $mod+Escape exec --no-startup-id ~/.config/rofi/bin/menu_powermenu
 
 # Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
@@ -120,7 +120,7 @@ bindsym $mod+r mode "resize"
 
 # autostart
 exec picom --experimental-backends --backend glx -b
-exec --no-startup-id feh --randomize --bg-fill /usr/share/wallpapers/*
+exec --no-startup-id feh --randomize --bg-fill /usr/share/backgrounds/*
 exec --no-startup-id polybar bar1 &
 exec --no-startup-id setxkbmap us,il -option grp:caps_toggle &
 exec xset s off -dpms &
