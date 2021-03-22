@@ -66,6 +66,12 @@
 
 (add-hook 'prog-mode-hook #'smart-semicolon-mode)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'prog-mode-hook #'rainbow-Mode)
+(add-hook 'prog-mode-hook #'linum-mode)
+(add-hook 'prog-mode-hook #'highlight-indent-guides-mode)
+
+(global-prettier-mode)
 
 (add-to-list 'load-path "~/.emacs.d/scripts")
 (load "better-comments.el")
+

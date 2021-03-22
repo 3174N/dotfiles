@@ -55,3 +55,7 @@
 (package! smart-semicolon)
 (package! rainbow-delimiters)
 (package! magit)
+(package! lsp-ui)
+(package! prettier)
+(package! rainbow-mode)
+(package! highlight-indent-guides)
