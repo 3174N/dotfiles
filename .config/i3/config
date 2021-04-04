@@ -7,8 +7,8 @@ gaps inner 16
 for_window [class=".*"] border pixel 2
 client.focused #fafafa #fafafa #fafafa #fafafa
 client.unfocused #1a1a1a #1a1a1a #1a1a1a #1a1a1a
-smart_borders on
-smart_gaps on
+# smart_borders on
+# smart_gaps on
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
