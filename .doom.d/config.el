@@ -58,9 +58,12 @@
 ;; WakaTime doesn't work *yet*
 ;; (wakatime-mode)
 
-(global-fancy-dabbrev-mode)
-(global-set-key (kbd "<tab>") 'fancy-dabbrev-expand-or-indent)
-(global-set-key (kbd "<backtab>") 'fancy-dabbrev-backward)
+;; (global-fancy-dabbrev-mode)
+;; (global-set-key (kbd "<tab>") 'fancy-dabbrev-expand-or-indent)
+;; (global-set-key (kbd "<backtab>") 'fancy-dabbrev-backward)
+
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
 
 (elcord-mode)
 

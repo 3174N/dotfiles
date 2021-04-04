@@ -50,7 +50,8 @@
 ;(unpin! t)
 
 (package! wakatime-mode)
-(package! fancy-dabbrev)
+;; (package! fancy-dabbrev)
+(package! jedi)
 (package! elcord)
 (package! smart-semicolon)
 (package! rainbow-delimiters)
