@@ -62,10 +62,15 @@
 ;; (global-set-key (kbd "<tab>") 'fancy-dabbrev-expand-or-indent)
 ;; (global-set-key (kbd "<backtab>") 'fancy-dabbrev-backward)
 
+;;;;;;;;;;;;;;;;;;;;;
+;; Auto completion ;;
+;;;;;;;;;;;;;;;;;;;;;
+
+;; Python
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 
-(elcord-mode)
+;; (elcord-mode)
 
 (add-hook 'prog-mode-hook #'smart-semicolon-mode)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
@@ -74,7 +79,4 @@
 (add-hook 'prog-mode-hook #'highlight-indent-guides-mode)
 
 (global-prettier-mode)
-
-(add-to-list 'load-path "~/.emacs.d/scripts")
-(load "better-comments.el")
 
