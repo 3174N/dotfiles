@@ -59,3 +59,8 @@
 (package! prettier)
 (package! rainbow-mode)
 (package! highlight-indent-guides)
+(package! git-gutter)
+(package! vc-msg)
+(package! impatient-mode)
+(package! xkcd)
+(package! emmet-mode)
