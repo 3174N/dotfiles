@@ -63,4 +63,5 @@
 (package! vc-msg)
 (package! impatient-mode)
 (package! xkcd)
+(package! docstr)
 (package! emmet-mode)

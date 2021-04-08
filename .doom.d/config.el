@@ -111,3 +111,4 @@
 
 (global-prettier-mode)
 
+(global-docstr-mode 1)

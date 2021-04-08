@@ -22,3 +22,6 @@
     adog = log --all --decorate --oneline --graph
 [init]
 	  defaultBranch = master
+[github]
+	user = 3174N
+	oauth-token = 964044
