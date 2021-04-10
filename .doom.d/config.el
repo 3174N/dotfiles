@@ -97,6 +97,15 @@
 ;; Auto completion ;;
 ;;;;;;;;;;;;;;;;;;;;;
 
+;; Company
+(use-package lsp-mode
+  :ensure t)
+
+(use-package company-lsp
+  :ensure t
+  :config
+  (add-to-list 'company-backends 'company-lsp))
+
 ;; Python
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
@@ -112,3 +121,7 @@
 (global-prettier-mode)
 
 (global-docstr-mode 1)
+
+(setq docstr-key-support t)
+(setq docstr-js-style 'google)
+
