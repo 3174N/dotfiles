@@ -86,12 +86,12 @@
 
 (setq-default cursor-type 'box)
 
-;; WakaTime doesn't work *yet*
-;; (wakatime-mode)
+;;;;;;;;;;;;;;;;
+;; Keybinding ;;
+;;;;;;;;;;;;;;;;
 
-;; (global-fancy-dabbrev-mode)
-;; (global-set-key (kbd "<tab>") 'fancy-dabbrev-expand-or-indent)
-;; (global-set-key (kbd "<backtab>") 'fancy-dabbrev-backward)
+(map! :leader
+      :desc "SPC SPC -> M-x" "SPC" #'counsel-M-x)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Auto completion ;;
@@ -101,16 +101,18 @@
 (use-package lsp-mode
   :ensure t)
 
-(use-package company-lsp
-  :ensure t
-  :config
-  (add-to-list 'company-backends 'company-lsp))
+;; (use-package company-lsp
+;;   :ensure t
+;;   :config
+;;   (add-to-list 'company-backends 'company-lsp))
 
 ;; Python
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 
-;; (elcord-mode)
+;;;;;;;;;;
+;; Misc ;;
+;;;;;;;;;;
 
 (add-hook 'prog-mode-hook #'smart-semicolon-mode)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
