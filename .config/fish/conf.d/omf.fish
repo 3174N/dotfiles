@@ -29,3 +29,22 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias cp='cp -i'
 alias vim='nvim'
+
+# Scripts
+
+function bot
+    if test $argv[1] = 'start'
+        # Kill bot if it wasn't dead already
+        pkill -9 -f $script
+        nohup python $script &
+    else if test $argv[1] = 'stop'
+        pkill -9 -f $script
+    else if test $argv[1] = 'set'
+        set -U script $argv[2]
+    else if test $argv[1] = 'get'
+        echo $script
+    else
+        echo 'Usage: bot [start|stop|get|set] {path/to/script}'
+    end
+end
+
