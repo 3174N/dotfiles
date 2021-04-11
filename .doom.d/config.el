@@ -91,7 +91,7 @@
 ;;;;;;;;;;;;;;;;
 
 (map! :leader
-      :desc "SPC SPC -> M-x" "SPC" #'counsel-M-x)
+      :desc "SPC SPC -> M-x" "SPC" #'helm-M-x)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Auto completion ;;
