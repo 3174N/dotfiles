@@ -29,6 +29,7 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias cp='cp -i'
 alias vim='nvim'
+alias ccat='pygmentize -g'
 
 # Scripts
 
