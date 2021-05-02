@@ -3,8 +3,8 @@
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 
-(setq doom-font (font-spec :family "Fira Code" :size 13)
-      doom-variable-pitch-font(font-spec :family "Fira Code" :size 13))
+(setq doom-font (font-spec :family "JetBrains Mono" :size 13)
+      doom-variable-pitch-font(font-spec :family "JetBrains Mono" :size 13))
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.

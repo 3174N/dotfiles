@@ -29,8 +29,8 @@ font-0 = JetBrains Mono Nerd Font:Semibold:size=10.5;3
 ; COLORS ;
 ;--------;
 
-background = #0e0e0e
-foreground = #fafafa
+background = #282a36
+foreground = #f8f8f2
 border-color = 0
 
 ;---------------;
