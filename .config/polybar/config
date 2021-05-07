@@ -55,8 +55,8 @@ module-margin = 0
 overline-size = 6
 underline-size = 6.5
 
-modules-left = sep1 i3 title sep2 sep1 playerctl sep2
-modules-center =
+modules-left = sep1 i3 sep2 sep1 playerctl sep2
+modules-center = sep1 title sep2
 modules-right = sep1 wired-network wireless-network sep2 sep1 xkeyboard sep2 sep1 volume battery sep2 sep1 date-time sep2
 
 enable-ipc = true
@@ -221,7 +221,7 @@ label-visible-overline = ${settings.bg}
 label-visible-underline = ${settings.bg}
 label-visible-padding = 1
 
-ws-icon-0 = 1;
+ws-icon-0 = 1;
 ws-icon-1 = 2;ﭮ
 ws-icon-2 = 3;
 ws-icon-3 = 4;
@@ -237,6 +237,7 @@ ws-icon-default = 
 type = internal/xwindow
 
 format-prefix = " "
+format-suffix = " "
 
 format-background = ${settings.bg2}
 format-foreground = ${settings.cyan}
