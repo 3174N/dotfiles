@@ -118,7 +118,7 @@ format-disconnected-overline = ${settings.bg}
 
 [module/wireless-network]
 type = internal/network
-interface = wlp0s20f3
+interface = wlp2s0
 
 label-connected = 直 %essid%  %downspeed%  %upspeed%
 label-disconnected = 睊 Disconnected
