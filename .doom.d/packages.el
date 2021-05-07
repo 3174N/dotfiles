@@ -71,4 +71,4 @@
 (package! zone-rainbow)
 (package! nyan-mode)
 (package! ghub)
-(package! clang-formatter)
+(package! lsp-dart)
