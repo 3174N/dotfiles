@@ -236,9 +236,6 @@ ws-icon-default = 
 [module/title]
 type = internal/xwindow
 
-format-prefix = " "
-format-suffix = " "
-
 format-background = ${settings.bg2}
 format-foreground = ${settings.cyan}
 format-underline = ${settings.bg}

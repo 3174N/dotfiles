@@ -27,7 +27,10 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+c kill
 
 # start rofi
-bindsym $mod+d exec rofi -no-lazy-grab -show drun -theme ~/.config/rofi/launchers/misc/blurry.rasi
+bindsym $mod+d exec rofi -no-lazy-grab -show drun -theme ~/.config/rofi/launchers/text/style_2.rasi
+bindsym $mod+w exec rofi -no-lazy-grab -show window -theme ~/.config/rofi/launchers/text/style_2.rasi
+
+# start powermenu
 bindsym $mod+Escape exec --no-startup-id ~/.config/rofi/bin/menu_powermenu
 
 # Screenshots
