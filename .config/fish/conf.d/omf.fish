@@ -1,5 +1,5 @@
 # RANDOM COLOR SCRIPT 
-colorscript random
+# colorscript random
 
 # Path to Oh My Fish install.
 set -q XDG_DATA_HOME
