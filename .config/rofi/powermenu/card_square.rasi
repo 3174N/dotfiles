@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:							"FantasqueSansMono Nerd Font 12";
+	font:							"JetBrains Mono Nerd Font 10.5";
     show-icons:                     false;
 	icon-theme: 					"Papirus";
     drun-display-format:            "{name}";
@@ -24,22 +24,25 @@ window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-    border-radius:                  0px;
-    height:                         28.5%;
-    width:                          50%;
-    location:                       center;
+    border: 						5px;
+    border-color: 					@background-alt;
+    border-radius: 					25px;
+    height:                         20%;
+    width:                          31.5%;
+    location:                       north;
     x-offset:                       0;
-    y-offset:                       0;
+    y-offset:                       46;
 }
 
 prompt {
-    enabled: 						true;
+    enabled: 						false;
     padding:                        0.5% 0.5% 0.5% 0%;
 	background-color: 				@background-alt;
 	text-color: 					@foreground;
 }
 
 textbox-prompt-colon {
+    enabled: 						false;
 	expand: 						false;
 	str: 							"System |";
 	background-color: 				@background-alt;
@@ -48,6 +51,7 @@ textbox-prompt-colon {
 }
 
 inputbar {
+    enabled: 						false;
 	children: 						[ textbox-prompt-colon, prompt ];
     background-color:               @background-alt;
     text-color:                     @foreground;
@@ -73,14 +77,14 @@ mainbox {
     background-color:               @background;
     children:                       [ inputbar, listview ];
     spacing:                        3.5%;
-    padding:                        4% 0% 0% 2%;
+    padding:                        2.5% 0% 0% 2%;
 }
 
 element {
     background-color:               @background-alt;
     text-color:                     @foreground;
     orientation:                    horizontal;
-    border-radius:                  0%;
+    border-radius:                  25px;
 }
 
 element-text {
@@ -108,7 +112,7 @@ element selected {
     background-color:               @selected;
     text-color:                     @foreground;
     border:                  		0% 0% 0% 0.2%;
-    border-radius:                  0%;
+    border-radius:                  25px;
     border-color:                  	@border;
 }
 
