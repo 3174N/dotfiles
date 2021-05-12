@@ -85,7 +85,9 @@ label-muted = ﱝ Muted
 ramp-volume-0 = 奄
 ramp-volume-1 = 奔
 ramp-volume-2 = 墳
+
 click-right = pavucontrol
+
 format-volume-background = ${settings.bg2}
 format-volume-foreground = ${settings.yellow}
 format-volume-underline = ${settings.bg}

@@ -4,16 +4,16 @@
     geometry = "400x8-8+40"
     indicate_hidden = yes
     shrink = no
-    transparency = 5
+    transparency = 0
     notification_height = 0
     separator_height = 8
     padding = 8
     horizontal_padding = 8
     frame_width = 2
-    frame_color = "#fafafa"
-    separator_color = "#0e0e0e"
+    frame_color = "#f8f8f2"
+    separator_color = "#282a36"
     idle_threshold = 120
-    font = Sauce Code Pro Nerd Font 10
+    font = JetBrains Mono Nerd Font 10
     line_height = 0
     markup = full
     format = "<b>%a - %s</b>\n%b"
@@ -34,24 +34,26 @@
     class = Dunst
     startup_notification = false
     verbosity = mesg
-    corner_radius = 0
+    corner_radius = 10
     mouse_left_click = do_action, close_current
     mouse_middle_click = do_action, close_current
     mouse_right_click = close_all
 
 [urgency_low]
-    background = "#0e0e0e"
-    foreground = "#fafafa"
+    background = "#282a36"
+    foreground = "#f8f8f2"
+    frame_color = "#44475a"
     timeout = 10
 
 [urgency_normal]
-    background = "#0e0e0e"
-    foreground = "#fafafa"
+    background = "#282a36"
+    foreground = "#f8f8f2"
+    frame_color = "#44475a"
     timeout = 10
 
 [urgency_critical]
-    background = "#0e0e0e"
-    foreground = "#fafafa"
-    frame_color = "#ff0000"
+    background = "#282a36"
+    foreground = "#f8f8f2"
+    frame_color = "#ff5555"
     timeout = 0
 # vim: ft=cfg
