@@ -43,7 +43,7 @@ configuration {
 window {
     border: 						5px;
     border-color: 					@alt;
-    border-radius: 					6px;
+    border-radius: 					0px;
     padding: 						15;
     width: 							20%;
 

@@ -26,7 +26,7 @@ window {
     text-color:                     @foreground;
     border: 						5px;
     border-color: 					@background-alt;
-    border-radius: 					25px;
+    border-radius: 					0px;
     height:                         20%;
     width:                          31.5%;
     location:                       north;
