@@ -1,6 +1,6 @@
 [user]
-	  name = 3174N
-	  email = eitan.levy.159@gmail.com
+	  name = Ethan Levy
+	  email = ethan@ethanlevy.org
 [credential]
 	  helper = store
 [pull]
@@ -9,7 +9,7 @@
     default = simple
 [sendemail]
     smtpserver = smtp.migadu.com
-    smtpuser = 3174N@protonmail.com
+    smtpuser = ethan@ethanlevy.org
     smtpencryption = tls
     smtpserverport = 587
     confirm = auto
