@@ -22,6 +22,10 @@ Plug 'tpope/vim-commentary'
 Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
+Plug 'lfilho/cosco.vim'
+Plug 'aserebryakov/vim-todo-lists'
+Plug 'rhysd/vim-clang-format'
+Plug 'universal-ctags/ctags'
 " Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tveskag/nvim-blame-line'
@@ -64,6 +68,7 @@ set autoread
 set backspace=indent,eol,start
 set scrolloff=1
 set incsearch
+set tags=./tags,tags;$HOME
 
 " Switch Tabs
 nnoremap tl :tabnext<CR>
@@ -87,6 +92,11 @@ nnoremap <A-l> <C-w>l
 
 " DoGe comment
 nnoremap dg :DogeGenerate<CR>
+
+" Ctags keybinds
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
 
 " Colorscheme
 colorscheme dracula
