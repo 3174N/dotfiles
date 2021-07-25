@@ -9,7 +9,7 @@
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
 (setq user-full-name "Ethan Levy"
-      user-mail-address "3174N@protonmail.com")
+      user-mail-address "ethan@ethanlevy.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
@@ -116,9 +116,10 @@
 
 (add-hook 'prog-mode-hook #'smart-semicolon-mode)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-(add-hook 'prog-mode-hook #'rainbow-Mode)
-(add-hook 'prog-mode-hook #'linum-mode)
+;; (add-hook 'prog-mode-hook #'rainbow-Mode)
 (add-hook 'prog-mode-hook #'highlight-indent-guides-mode)
+
+(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
 (global-prettier-mode)
 
@@ -127,3 +128,36 @@
 (setq docstr-key-support t)
 (setq docstr-js-style 'google)
 
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
+
+;;;;;;;;;;
+;; mu4e ;;
+;;;;;;;;;;
+
+(add-to-list 'load-path "/usr/local/share/emacs/site-lisp/mu4e")
+;;(require 'smtpmail)
+(setq user-mail-address "ethan@ethanlevy.org"
+      user-full-name  "Ethan Levy"
+      ;; I have my mbsyncrc in a different folder on my system, to keep it separate from the
+      ;; mbsyncrc available publicly in my dotfiles. You MUST edit the following line.
+      ;; Be sure that the following command is: "mbsync -c ~/.config/mu4e/mbsyncrc -a"
+      mu4e-get-mail-command "mbsync -c ~/.config/mu4e/mbsyncrc -a"
+      mu4e-update-interval  300
+      mu4e-main-buffer-hide-personal-addresses t
+      message-send-mail-function 'smtpmail-send-it
+      starttls-use-gnutls t
+      smtpmail-starttls-credentials '(("smtp.migadu.com" 465 nil nil))
+      mu4e-sent-folder "/account-1/Sent"
+      mu4e-drafts-folder "/account-1/Drafts"
+      mu4e-trash-folder "/account-1/Trash"
+      mu4e-maildir-shortcuts
+      '(("/account-1/Inbox"      . ?i)
+        ("/account-1/Sent Items" . ?s)
+        ("/account-1/Drafts"     . ?d)
+        ("/account-1/Trash"      . ?t)))
+
+
+(custom-set-variables
+    '(tab-width 4))
