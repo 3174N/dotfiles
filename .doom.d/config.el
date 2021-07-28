@@ -106,6 +106,11 @@
 ;;   :config
 ;;   (add-to-list 'company-backends 'company-lsp))
 
+;; Company tabnine
+(add-to-list 'company-backends #'company-tabnine)
+(setq company-idle-delay 0)
+(setq company-show-numbers t)
+
 ;; Python
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
