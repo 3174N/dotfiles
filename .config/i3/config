@@ -136,3 +136,4 @@ exec udiskie -Nt &
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst &
 exec --no-startup-id feh --randomize --bg-fill /usr/share/wallpapers/*
+exec --no-startup-id glava --desktop &
