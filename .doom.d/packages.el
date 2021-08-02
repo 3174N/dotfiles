@@ -69,4 +69,4 @@
 (package! ghub)
 ;; (package! lsp-dart)
 (package! py-autopep8)
-(package! company-tabnine)
+;; (package! company-tabnine)

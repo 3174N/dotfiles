@@ -137,6 +137,13 @@
 (setq-default tab-width 4)
 (setq indent-line-function 'insert-tab)
 
+;; Unity.el
+(straight-use-package
+ '(unity :type git :host github :repo "elizagamedev/unity.el"
+         :files ("*.el" "*.c")))
+(add-hook 'after-init-hook #'unity-build-code-shim)
+(add-hook 'after-init-hook #'unity-setup)
+
 ;;;;;;;;;;
 ;; mu4e ;;
 ;;;;;;;;;;
