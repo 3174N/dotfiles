@@ -34,3 +34,4 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias cp='cp -i'
 alias vim='nvim'
+if [ -e /home/ethan/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ethan/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

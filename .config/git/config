@@ -16,6 +16,7 @@
     annotate = yes
 [core]
     editor = nvim
+	autocrlf = input
 [instaweb]
     editor = firefox
 [alias]

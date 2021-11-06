@@ -119,6 +119,7 @@
 ;; Misc ;;
 ;;;;;;;;;;
 
+(add-hook 'prog-mode-hook #'lsp)
 (add-hook 'prog-mode-hook #'smart-semicolon-mode)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 ;; (add-hook 'prog-mode-hook #'rainbow-Mode)
@@ -173,3 +174,9 @@
 
 (custom-set-variables
     '(tab-width 4))
+
+(defun set-exec-path-from-shell-PATH ()
+  (let ((path-from-shell (shell-command-to-string "$SHELL -c 'echo $PATH'")))
+    (setenv "PATH" path-from-shell)
+    (setq exec-path (split-string path-from-shell path-separator))))
+(when window-system (set-exec-path-from-shell-PATH))

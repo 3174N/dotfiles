@@ -35,7 +35,7 @@ override-redirect = false
 ; FONTS ;
 ;-------;
 
-font-0 = JetBrains Mono Nerd Font:Semibold:size=10.5;3
+font-0 = JetBrains Mono Nerd Font Mono:Semibold:size=10.5;3
 
 ;--------;
 ; COLORS ;
